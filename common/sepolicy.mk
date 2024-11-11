@@ -17,13 +17,9 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/statix/sepolicy/common/dynamic \
-    hardware/google/pixel-sepolicy/flipendo \
-    hardware/google/pixel-sepolicy/turbo_adapter
+    device/statix/sepolicy/common/dynamic
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/statix/sepolicy/common/dynamic \
-    device/statix/sepolicy/common/vendor \
-    hardware/google/pixel-sepolicy/flipendo \
-    hardware/google/pixel-sepolicy/turbo_adapter
+    device/statix/sepolicy/common/vendor
 endif
